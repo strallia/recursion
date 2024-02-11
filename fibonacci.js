@@ -27,7 +27,6 @@ function fibsRec(num) {
       fibsRec(num - 1).at(-1) + fibsRec(num - 2).at(-1)
     ];
   }
-  
 }
 
 console.log(fibsRec(8));
