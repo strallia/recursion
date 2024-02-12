@@ -29,4 +29,7 @@ function fibsRec(num) {
   }
 }
 
-console.log(fibsRec(8));
+console.log(
+  'fibsRec(8) returns:',
+  fibsRec(8)
+);

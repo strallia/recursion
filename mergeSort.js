@@ -6,7 +6,7 @@ function mergeSort(arr) {
   let midpointIndex = Math.floor((arr.length) / 2);
   let leftArr = arr.slice(0,midpointIndex);
   let rightArr = arr.slice(midpointIndex);
-  
+
   return [
     ...merge(
     mergeSort(leftArr),
@@ -40,5 +40,8 @@ function merge(leftArr, rightArr, leftIndex = 0, rightIndex = 0) {
   return sortedArr;
 }
 
-console.log(mergeSort([3, 2, 1, 13, 8, 5, 0, 1]));
+console.log(
+  'mergeSort([3, 2, 1, 13, 8, 5, 0, 1]) returns:',
+  mergeSort([3, 2, 1, 13, 8, 5, 0, 1])
+);
 
